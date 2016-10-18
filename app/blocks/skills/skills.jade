@@ -1,0 +1,10 @@
+mixin skills(skills)
+	+b.skills&attributes(attributes)
+		each item in skills
+			if item[2]
+				+e('input').item(type='checkbox' id='#{ item[0] }' name='skills' checked)
+			else
+				+e('input').item(type='checkbox' id='#{ item[0] }' name='skills')
+			+e('label').name(for='#{ item[0] }')
+				+e('span').text
+					| #{ item[1] }

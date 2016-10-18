@@ -1,0 +1,10 @@
+include ../label/label
+
+mixin field(label, content)
+	+b.field&attributes(attributes)
+		+e.label
+			+label
+				| #{ label }
+		+e.content
+			| #{ content }
+		block

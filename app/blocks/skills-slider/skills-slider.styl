@@ -1,0 +1,67 @@
+.skills-slider
+	margin-top 28px
+
+	&__pointer
+		position relative
+		width 0
+		height 14px
+		transition-duration .3s
+		transition-timing-function ease-out
+		transition-property width
+
+		&:after
+			position absolute
+			z-index 3
+			top 0
+			right 0
+			display block
+			sprite($arrow)
+			content ''
+
+		&_no
+			width 16px
+
+		&_use
+			width 163px
+
+		&_edit
+			width 388px
+
+		&_write
+			width 770px
+
+	&__scale
+		position relative
+		margin-top 3px
+		margin-left 5px
+		sprite($js_scale)
+
+	&__labels
+		position relative
+		margin-top 3px
+		margin-left 5px
+		display block
+		height 28px
+
+	&__label
+		position absolute
+		top 0
+		left 0
+		display block
+		width 170px
+		font-size 13px
+		line-height 20px
+		cursor pointer
+		color brown
+
+		&_no
+			left 0
+
+		&_use
+			left 148px
+
+		&_edit
+			left 374px
+
+		&_write
+			left 625px

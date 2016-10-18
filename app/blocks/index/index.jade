@@ -1,0 +1,21 @@
+include ../about/about
+include ../graduate/graduate
+include ../skills-summary/skills-summary
+include ../skills/skills
+include ../js-skill/js-skill
+include ../field/field
+
+mixin index()
+	+b.index
+
+		+about(getData('about'))
+
+		+graduate
+
+		+skills-summary
+
+		+skills(getData('skills'))
+
+		+js-skill
+
+		+field('Дата заполнения', '18.06.2016')._date

@@ -1,0 +1,9 @@
+include ../logo/logo
+include ../secret/secret
+include ../title/title
+
+mixin header()
+	+b.header&attributes(attributes)
+		+logo
+		+secret
+		+title

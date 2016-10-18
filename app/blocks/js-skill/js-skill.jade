@@ -1,0 +1,8 @@
+include ../label/label
+include ../skills-slider/skills-slider
+
+mixin js-skill()
+	+b.js-skill&attributes(attributes)
+		+label
+			| Уровень владения JavaScript
+		+skills-slider

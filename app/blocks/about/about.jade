@@ -1,0 +1,6 @@
+include ../field/field
+
+mixin about(about)
+	+b.about&attributes(attributes)
+		each item in about
+			+field(item[0], item[1])

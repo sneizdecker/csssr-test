@@ -1,0 +1,29 @@
+.field
+	margin-y 10px
+	overflow hidden
+	height 50px
+	clearfix()
+
+	&__label
+		margin-top 15px
+		margin-right 18px
+		float left
+
+	&__content
+		position relative
+		padding-left 14px
+		float left
+		font-family courer-new
+		font-size 30px
+		color #231f20
+
+		&::after
+			position absolute
+			left 0
+			bottom -10px
+			display block
+			content ''
+			sprite($stripe)
+
+	&_date
+		width 390px

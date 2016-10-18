@@ -1,0 +1,9 @@
+mixin radio-toggle(text, id, name, checked)
+	+b.radio-toggle&attributes(attributes)
+		if checked
+			+e('input').checker(type='radio' id='#{ id }' name='#{ name }' checked)
+		else
+			+e('input').checker(type='radio' id='#{ id }' name='#{ name }')
+		+e('label').name(for='#{ id }')
+			+e('span').text
+				| #{ text }

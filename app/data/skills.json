@@ -1,0 +1,20 @@
+[
+	["skill1", "Методология БЭМ", "checked"],
+	["skill2", "jQuery", "checked"],
+	["skill3", "Использую GRUNT"],
+	["skill4", "HAML"],
+	["skill5", "SASS"],
+	["skill6", "LESS"],
+	["skill7", "CoffeeScript"],
+	["skill8", "Jade", "checked"],
+	["skill9", "Stylus", "checked"],
+	["skill10", "Знаю (изучаю) Angular"],
+	["skill11", "Верстка под Android"],
+	["skill12", "Верстка под iOS"],
+	["skill13", "Верстка под Windows Phone"],
+	["skill14", "Верстка рассылок"],
+	["skill15", "Адаптивная верстка", "checked"],
+	["skill16", "Использую Dropbox", "checked"],
+	["skill17", "Использую Gmail", "checked"],
+	["skill18", "Использую GitHub", "checked"]
+]

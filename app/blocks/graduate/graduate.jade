@@ -1,0 +1,13 @@
+include ../label/label
+include ../radio-toggle/radio-toggle
+include ../link/link
+
+mixin graduate()
+	+b.graduate&attributes(attributes)
+		+e.label
+			+label
+				| Выпускник
+				+link('https://htmlacademy.ru/', 'htmlacademy.ru')
+		+e.toggle
+			+radio-toggle('Да', 'id1', 'graduate')
+			+radio-toggle('Нет', 'id2', 'graduate', 'checked')

@@ -1,0 +1,32 @@
+.radio-toggle
+	margin-right 20px
+	float left
+	line-height 0px
+
+	&__name
+		position relative
+		padding-left 27px
+		float left
+		cursor pointer
+
+	&__checker
+		display none
+
+	&__text
+		margin-left 4px
+		float left
+		height 28px
+		font-size 22px
+		line-height 28px
+		color brown
+
+	&__checker + &__name:before
+		position absolute
+		top 0
+		left 0
+		display block
+		content ''
+		sprite($graduate_false)
+
+	&__checker:checked + &__name:before
+		sprite($graduate_true)

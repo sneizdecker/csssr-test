@@ -1,0 +1,13 @@
+mixin skills-slider()
+	+b.skills-slider&attributes(attributes)
+		+e.pointer._use
+		+e.scale
+		+e.labels
+			+e.label._no
+				| Не владею
+			+e.label._use
+				| Использую готовые решения
+			+e.label._edit
+				| Использую готовые решения и умею их переделывать
+			+e.label._write
+				| Пишу сложные скрипты
